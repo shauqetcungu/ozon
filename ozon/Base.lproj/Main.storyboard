@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y1r-b4-fUz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="2RI-us-XbC">
+            <objects>
+                <navigationController id="Y1r-b4-fUz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZUn-FD-mrZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.41960784309999999" green="0.55294117649999996" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wun-0C-NFa" kind="relationship" relationship="rootViewController" id="CNG-IV-mTr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MmU-0t-P8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1050" y="-186"/>
+        </scene>
+        <!--Saopštenja-->
+        <scene sceneID="g76-Ir-S9f">
+            <objects>
+                <viewController id="IfO-7C-n9n" customClass="SaopstenjaViewController" customModule="ozon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f5i-ug-blF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aK5-8E-yhw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnnouncementsCell" rowHeight="380" id="czJ-Dj-1mY" customClass="AnnouncementsCell" customModule="ozon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="380"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="czJ-Dj-1mY" id="6sg-eT-GKj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="379.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aleksandar_perovic_1024_x_576" translatesAutoresizingMaskIntoConstraints="NO" id="bcz-dN-kiW">
+                                                    <rect key="frame" x="10" y="10" width="355" height="259"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="259" id="2u4-Je-R8W"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.10.2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91g-vj-fMe">
+                                                    <rect key="frame" x="20" y="274" width="80" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="i2R-0S-NBf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ozon sa partnerima učestvovao na Sajmu energije, energetske..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yje-gV-DPe">
+                                                    <rect key="frame" x="20" y="306" width="335" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <color key="textColor" red="0.23137254901960785" green="0.28235294117647058" blue="0.34509803921568627" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yje-gV-DPe" firstAttribute="leading" secondItem="6sg-eT-GKj" secondAttribute="leadingMargin" constant="5" id="2X2-MW-m4V"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yje-gV-DPe" secondAttribute="trailing" constant="5" id="B9W-pj-p9g"/>
+                                                <constraint firstItem="bcz-dN-kiW" firstAttribute="centerX" secondItem="6sg-eT-GKj" secondAttribute="centerX" id="Elw-ph-ZHJ"/>
+                                                <constraint firstItem="91g-vj-fMe" firstAttribute="leading" secondItem="6sg-eT-GKj" secondAttribute="leadingMargin" constant="5" id="WsE-vP-C78"/>
+                                                <constraint firstItem="91g-vj-fMe" firstAttribute="top" secondItem="bcz-dN-kiW" secondAttribute="bottom" constant="5" id="cWq-oX-E9i"/>
+                                                <constraint firstItem="yje-gV-DPe" firstAttribute="top" secondItem="91g-vj-fMe" secondAttribute="bottom" constant="15" id="nPH-cU-bVA"/>
+                                                <constraint firstAttribute="trailing" secondItem="bcz-dN-kiW" secondAttribute="trailing" constant="10" id="pXV-CG-ksO"/>
+                                                <constraint firstItem="bcz-dN-kiW" firstAttribute="top" secondItem="6sg-eT-GKj" secondAttribute="top" constant="10" id="qhK-86-ArQ"/>
+                                                <constraint firstItem="bcz-dN-kiW" firstAttribute="leading" secondItem="6sg-eT-GKj" secondAttribute="leading" constant="10" id="ypK-ZL-Qo6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryDate" destination="91g-vj-fMe" id="aES-me-LV1"/>
+                                            <outlet property="categoryImage" destination="bcz-dN-kiW" id="QmO-tD-SE1"/>
+                                            <outlet property="categoryTitle" destination="yje-gV-DPe" id="r5A-rm-qe3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="aK5-8E-yhw" firstAttribute="bottom" secondItem="iEn-mZ-Jj0" secondAttribute="bottom" id="Ewm-YG-fat"/>
+                            <constraint firstItem="aK5-8E-yhw" firstAttribute="trailing" secondItem="iEn-mZ-Jj0" secondAttribute="trailing" id="ZHR-3n-s7w"/>
+                            <constraint firstItem="aK5-8E-yhw" firstAttribute="leading" secondItem="iEn-mZ-Jj0" secondAttribute="leading" id="uWZ-jy-k1s"/>
+                            <constraint firstItem="aK5-8E-yhw" firstAttribute="top" secondItem="iEn-mZ-Jj0" secondAttribute="top" id="wbe-L6-l4C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iEn-mZ-Jj0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Saopštenja" id="abo-3J-GsP">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="categoryTableAnnouncements" destination="aK5-8E-yhw" id="8cW-FG-zZv"/>
+                        <segue destination="o4z-Jv-ZuV" kind="show" identifier="SopstenjaOpsirnijeViewController" id="RLH-8o-Lbl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozT-E9-8ug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.8" y="145.27736131934034"/>
+        </scene>
+        <!--Sopstenja Opsirnije View Controller-->
+        <scene sceneID="X3g-QN-xea">
+            <objects>
+                <viewController storyboardIdentifier="SopstenjaOpsirnijeViewController" id="o4z-Jv-ZuV" customClass="SopstenjaOpsirnijeViewController" customModule="ozon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yef-1D-Uie">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-Pl-Jk1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.10.2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyy-DB-ZMy">
+                                        <rect key="frame" x="15" y="242" width="80" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="Jqq-DI-sUH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="tBk-qG-Vjy"/>
+                                            <constraint firstAttribute="width" constant="80" id="yN1-cr-QNZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ozon sa partnerima učestvovao na Sajmu energije, energetske efikasnosti, zaštite životne sredine i klimatskih promjena" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYd-aX-7cm">
+                                        <rect key="frame" x="15" y="279" width="345" height="86"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" red="0.23137254900000001" green="0.28235294119999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aleksandar_perovic_1024_x_576" translatesAutoresizingMaskIntoConstraints="NO" id="mvc-4b-2S1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="222" id="YGn-O6-TsP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVw-0m-8n6">
+                                        <rect key="frame" x="15" y="385" width="345" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.23137254900000001" green="0.28235294119999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Eyy-DB-ZMy" firstAttribute="leading" secondItem="1nx-Pl-Jk1" secondAttribute="leading" constant="15" id="CKk-5f-b66"/>
+                                    <constraint firstItem="GVw-0m-8n6" firstAttribute="top" secondItem="UYd-aX-7cm" secondAttribute="bottom" constant="20" id="Jfw-mL-ZPf"/>
+                                    <constraint firstItem="UYd-aX-7cm" firstAttribute="top" secondItem="Eyy-DB-ZMy" secondAttribute="bottom" constant="20" id="KAL-Ol-aS2"/>
+                                    <constraint firstItem="UYd-aX-7cm" firstAttribute="leading" secondItem="1nx-Pl-Jk1" secondAttribute="leading" constant="15" id="OOM-zk-JI5"/>
+                                    <constraint firstAttribute="trailing" secondItem="mvc-4b-2S1" secondAttribute="trailing" id="Skc-gg-gaW"/>
+                                    <constraint firstItem="GVw-0m-8n6" firstAttribute="leading" secondItem="1nx-Pl-Jk1" secondAttribute="leading" constant="15" id="WNi-Zy-4pV"/>
+                                    <constraint firstItem="mvc-4b-2S1" firstAttribute="leading" secondItem="1nx-Pl-Jk1" secondAttribute="leading" id="ZDa-pp-WuR"/>
+                                    <constraint firstAttribute="trailing" secondItem="UYd-aX-7cm" secondAttribute="trailing" constant="15" id="kq2-Zy-zLr"/>
+                                    <constraint firstItem="mvc-4b-2S1" firstAttribute="top" secondItem="1nx-Pl-Jk1" secondAttribute="top" id="pLc-P0-OyA"/>
+                                    <constraint firstAttribute="trailing" secondItem="GVw-0m-8n6" secondAttribute="trailing" constant="15" id="tnq-Zj-Hby"/>
+                                    <constraint firstItem="Eyy-DB-ZMy" firstAttribute="top" secondItem="mvc-4b-2S1" secondAttribute="bottom" constant="20" id="uD2-Y0-E98"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1nx-Pl-Jk1" firstAttribute="leading" secondItem="8Ey-5e-mcc" secondAttribute="leading" id="EJL-1a-QEq"/>
+                            <constraint firstItem="1nx-Pl-Jk1" firstAttribute="top" secondItem="8Ey-5e-mcc" secondAttribute="top" id="fkY-do-mwZ"/>
+                            <constraint firstItem="1nx-Pl-Jk1" firstAttribute="width" secondItem="yef-1D-Uie" secondAttribute="width" id="hxe-Ay-m6R"/>
+                            <constraint firstItem="1nx-Pl-Jk1" firstAttribute="height" secondItem="yef-1D-Uie" secondAttribute="height" id="t7i-We-VPU"/>
+                            <constraint firstItem="mvc-4b-2S1" firstAttribute="width" secondItem="yef-1D-Uie" secondAttribute="width" id="wAP-An-Hyd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Ey-5e-mcc"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailContentAnn" destination="GVw-0m-8n6" id="nfY-2d-PYr"/>
+                        <outlet property="detailDateAnn" destination="Eyy-DB-ZMy" id="ov1-rV-6LO"/>
+                        <outlet property="detailImageAnn" destination="mvc-4b-2S1" id="v0b-cU-ToB"/>
+                        <outlet property="detailScrollAnn" destination="1nx-Pl-Jk1" id="7Jx-dd-gfk"/>
+                        <outlet property="detailTitleAnn" destination="UYd-aX-7cm" id="IUK-6M-yZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3iT-OL-jGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2344.8000000000002" y="144.3778110944528"/>
+        </scene>
+        <!--Vijesti-->
+        <scene sceneID="xvA-vP-Cgu">
+            <objects>
+                <viewController id="4wX-nV-Z8x" customClass="VijestiViewController" customModule="ozon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iKf-Et-9R9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9fY-sG-FdC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="380" id="LIo-g9-rwI" customClass="CategoryCell" customModule="ozon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="380"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LIo-g9-rwI" id="pDB-Uf-gah">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="379.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aleksandar_perovic_1024_x_576" translatesAutoresizingMaskIntoConstraints="NO" id="whl-15-itI">
+                                                    <rect key="frame" x="10" y="10" width="355" height="259"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="259" id="g5c-sf-333"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30.04.2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrv-hU-fwb">
+                                                    <rect key="frame" x="20" y="274" width="80" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="gh5-3Q-NYb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ozon sa partnerima učestvovao na Sajmu energije, energetske..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K80-Ef-Jes">
+                                                    <rect key="frame" x="20" y="306" width="335" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <color key="textColor" red="0.23137254900000001" green="0.28235294119999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="whl-15-itI" firstAttribute="centerX" secondItem="pDB-Uf-gah" secondAttribute="centerX" id="8pY-ZI-PGm"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="K80-Ef-Jes" secondAttribute="trailing" constant="5" id="THO-Ng-zWO"/>
+                                                <constraint firstItem="whl-15-itI" firstAttribute="top" secondItem="pDB-Uf-gah" secondAttribute="top" constant="10" id="Z5h-Zu-Ux0"/>
+                                                <constraint firstItem="K80-Ef-Jes" firstAttribute="top" secondItem="lrv-hU-fwb" secondAttribute="bottom" constant="15" id="aKn-In-cjP"/>
+                                                <constraint firstItem="whl-15-itI" firstAttribute="leading" secondItem="pDB-Uf-gah" secondAttribute="leading" constant="10" id="eYH-LA-bnB"/>
+                                                <constraint firstItem="K80-Ef-Jes" firstAttribute="leading" secondItem="pDB-Uf-gah" secondAttribute="leadingMargin" constant="5" id="fIS-8n-sbn"/>
+                                                <constraint firstItem="lrv-hU-fwb" firstAttribute="top" secondItem="whl-15-itI" secondAttribute="bottom" constant="5" id="gcQ-fK-kTJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="whl-15-itI" secondAttribute="trailing" constant="10" id="vP0-jf-HZR"/>
+                                                <constraint firstItem="lrv-hU-fwb" firstAttribute="leading" secondItem="pDB-Uf-gah" secondAttribute="leadingMargin" constant="5" id="yVI-z2-7MS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="categoryDate" destination="lrv-hU-fwb" id="CQ5-ZG-kw2"/>
+                                            <outlet property="categoryImage" destination="whl-15-itI" id="rNO-Ph-uUB"/>
+                                            <outlet property="categoryTitle" destination="K80-Ef-Jes" id="KXz-7g-Baf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="9fY-sG-FdC" firstAttribute="trailing" secondItem="Rej-hA-efc" secondAttribute="trailing" id="4P5-kP-WRk"/>
+                            <constraint firstItem="9fY-sG-FdC" firstAttribute="top" secondItem="Rej-hA-efc" secondAttribute="top" id="PEH-se-SEe"/>
+                            <constraint firstItem="9fY-sG-FdC" firstAttribute="leading" secondItem="Rej-hA-efc" secondAttribute="leading" id="PO4-ue-grs"/>
+                            <constraint firstItem="9fY-sG-FdC" firstAttribute="bottom" secondItem="Rej-hA-efc" secondAttribute="bottom" id="gy8-dS-gU2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rej-hA-efc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vijesti" id="Vqe-Mv-7lE">
+                        <color key="badgeColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="categoryTable" destination="9fY-sG-FdC" id="baq-0i-QsM"/>
+                        <segue destination="pnX-xR-vKv" kind="show" identifier="VijestiOpsirnijeViewController" id="2d6-eG-0RM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swa-mU-zeE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.8" y="-518.59070464767615"/>
+        </scene>
+        <!--Vijesti Opsirnije View Controller-->
+        <scene sceneID="F3S-JL-bC6">
+            <objects>
+                <viewController storyboardIdentifier="VijestiOpsirnijeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pnX-xR-vKv" customClass="VijestiOpsirnijeViewController" customModule="ozon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oqA-no-jDP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="286-Mh-Icz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aleksandar_perovic_1024_x_576" translatesAutoresizingMaskIntoConstraints="NO" id="Evp-AO-QGb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="222" id="cgk-xF-8LX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.10.2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ub-4C-reI">
+                                        <rect key="frame" x="15" y="242" width="80" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Xfi-YL-QNI"/>
+                                            <constraint firstAttribute="width" constant="80" id="gA8-Ej-OFk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ozon sa partnerima učestvovao na Sajmu energije, energetske efikasnosti, zaštite životne sredine i klimatskih promjena" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yy3-eS-7vE">
+                                        <rect key="frame" x="15" y="279" width="345" height="86"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" red="0.23137254900000001" green="0.28235294119999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbk-Le-1YR">
+                                        <rect key="frame" x="15" y="405" width="345" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.23137254900000001" green="0.28235294119999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Tbk-Le-1YR" firstAttribute="top" secondItem="yy3-eS-7vE" secondAttribute="bottom" constant="40" id="14v-Xw-l1N"/>
+                                    <constraint firstAttribute="trailing" secondItem="yy3-eS-7vE" secondAttribute="trailing" constant="15" id="6kU-cT-Dn1"/>
+                                    <constraint firstItem="Evp-AO-QGb" firstAttribute="top" secondItem="286-Mh-Icz" secondAttribute="top" id="9Wq-z3-ACb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tbk-Le-1YR" secondAttribute="trailing" constant="15" id="J4i-aw-e31"/>
+                                    <constraint firstItem="yy3-eS-7vE" firstAttribute="leading" secondItem="286-Mh-Icz" secondAttribute="leading" constant="15" id="Pi8-L2-pTp"/>
+                                    <constraint firstItem="Tbk-Le-1YR" firstAttribute="top" secondItem="yy3-eS-7vE" secondAttribute="bottom" constant="40" id="Qff-NS-5Ky"/>
+                                    <constraint firstItem="6ub-4C-reI" firstAttribute="top" secondItem="Evp-AO-QGb" secondAttribute="bottom" constant="20" id="Sz7-QS-6bv"/>
+                                    <constraint firstItem="Tbk-Le-1YR" firstAttribute="leading" secondItem="286-Mh-Icz" secondAttribute="leading" constant="15" id="TJs-Wy-zqV"/>
+                                    <constraint firstItem="6ub-4C-reI" firstAttribute="leading" secondItem="286-Mh-Icz" secondAttribute="leading" constant="15" id="ZJQ-fW-f1f"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tbk-Le-1YR" secondAttribute="trailing" constant="15" id="cbi-rl-ioI"/>
+                                    <constraint firstItem="Tbk-Le-1YR" firstAttribute="leading" secondItem="286-Mh-Icz" secondAttribute="leading" constant="15" id="oOc-iO-kma"/>
+                                    <constraint firstItem="Evp-AO-QGb" firstAttribute="leading" secondItem="286-Mh-Icz" secondAttribute="leading" id="pH9-XG-U1J"/>
+                                    <constraint firstItem="yy3-eS-7vE" firstAttribute="top" secondItem="6ub-4C-reI" secondAttribute="bottom" constant="20" id="sFJ-pV-IpO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Evp-AO-QGb" secondAttribute="trailing" id="xqY-eE-b2X"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="VijestiCell"/>
+                        <constraints>
+                            <constraint firstItem="286-Mh-Icz" firstAttribute="height" secondItem="oqA-no-jDP" secondAttribute="height" id="Aoa-fh-8xI"/>
+                            <constraint firstItem="Evp-AO-QGb" firstAttribute="width" secondItem="oqA-no-jDP" secondAttribute="width" id="C9u-i1-5QO"/>
+                            <constraint firstItem="286-Mh-Icz" firstAttribute="top" secondItem="ddm-1J-whp" secondAttribute="top" id="cSG-jZ-C30"/>
+                            <constraint firstItem="286-Mh-Icz" firstAttribute="width" secondItem="oqA-no-jDP" secondAttribute="width" id="tvP-2S-Nif"/>
+                            <constraint firstItem="286-Mh-Icz" firstAttribute="leading" secondItem="ddm-1J-whp" secondAttribute="leading" id="zwv-v0-gVy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ddm-1J-whp"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailContentNews" destination="Tbk-Le-1YR" id="zj0-ln-jSr"/>
+                        <outlet property="detailDateNews" destination="6ub-4C-reI" id="CuT-Y7-PnS"/>
+                        <outlet property="detailImageNews" destination="Evp-AO-QGb" id="TJ2-Hm-kQh"/>
+                        <outlet property="detailScrollNews" destination="286-Mh-Icz" id="39i-FG-tJm"/>
+                        <outlet property="detailTitleNews" destination="yy3-eS-7vE" id="L9p-mS-r6X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zHl-aC-xK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2344.8000000000002" y="-520.38980509745136"/>
+        </scene>
+        <!--Custom Tab Bar Controller-->
+        <scene sceneID="zAF-5O-yen">
+            <objects>
+                <tabBarController id="Wun-0C-NFa" customClass="CustomTabBarController" customModule="ozon" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="d3S-cN-e4S"/>
+                    <tabBar key="tabBar" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JRi-kk-eg8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.23137254901960785" green="0.28235294117647058" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4wX-nV-Z8x" kind="relationship" relationship="viewControllers" id="05h-YA-fNH"/>
+                        <segue destination="IfO-7C-n9n" kind="relationship" relationship="viewControllers" id="bpL-Rv-mTT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4K-Jd-D4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="639" y="-185"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aleksandar_perovic_1024_x_576" width="1440" height="888"/>
+    </resources>
+</document>

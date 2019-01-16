@@ -1,0 +1,20 @@
+PODS:
+  - Dropdowns (2.0.0)
+  - Kingfisher (4.9.0)
+
+DEPENDENCIES:
+  - Dropdowns
+  - Kingfisher (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Dropdowns
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Dropdowns: 9dd32d9ac9cc59e56ae093b588d35477abde32d2
+  Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+
+PODFILE CHECKSUM: f585605a4fadcce4b60c3410bc945666fb53a3b3
+
+COCOAPODS: 1.5.3

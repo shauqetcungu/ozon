@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="depositphotos_28587659_xl_2015" translatesAutoresizingMaskIntoConstraints="NO" id="jY0-Ov-byN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_ozon_1" translatesAutoresizingMaskIntoConstraints="NO" id="ohY-hh-HB8">
+                                <rect key="frame" x="80" y="267" width="254" height="197"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z5-GJ-H1G">
+                                <rect key="frame" x="30" y="580" width="354" height="86"/>
+                                <string key="text">Prosječno drvo bukve svakoga sata daje 1,7 kg kiseonika, a dnevno proizvede dovoljno kiseonika za 
+64 osobe :)</string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ohY-hh-HB8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="57Q-bI-UBv"/>
+                            <constraint firstItem="jY0-Ov-byN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Vp-SF-NCV"/>
+                            <constraint firstItem="ohY-hh-HB8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="247" id="DUf-0T-zPi"/>
+                            <constraint firstItem="jY0-Ov-byN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="G3y-PB-hLg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ohY-hh-HB8" secondAttribute="bottom" constant="272" id="O4a-j5-MVZ"/>
+                            <constraint firstItem="1Z5-GJ-H1G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="TOZ-8o-ICh"/>
+                            <constraint firstItem="ohY-hh-HB8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="fRA-dw-A6e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Z5-GJ-H1G" secondAttribute="trailing" constant="30" id="m5A-lf-95l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jY0-Ov-byN" secondAttribute="bottom" id="mlG-Lh-gji"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ohY-hh-HB8" secondAttribute="trailing" constant="80" id="pK1-oC-HIc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jY0-Ov-byN" secondAttribute="trailing" id="tFu-L0-Rdq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Z5-GJ-H1G" secondAttribute="bottom" constant="70" id="xh2-Uy-K0h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="depositphotos_28587659_xl_2015" width="1440" height="2560"/>
+        <image name="logo_ozon_1" width="804" height="584"/>
+    </resources>
+</document>

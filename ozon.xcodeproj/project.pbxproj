@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20F861933D313867D468F4D4 /* Pods_ozon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE1AB5B4C607F6F3607A18A /* Pods_ozon.framework */; };
+		C3031CDE21E37B37004F3605 /* VijestiOpsirnijeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3031CDD21E37B37004F3605 /* VijestiOpsirnijeViewController.swift */; };
+		C3031CE221E381D2004F3605 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3031CE121E381D2004F3605 /* Detail.swift */; };
+		C3031CE421E39310004F3605 /* SopstenjaOpsirnijeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3031CE321E39310004F3605 /* SopstenjaOpsirnijeViewController.swift */; };
+		C3031CE621E39E3C004F3605 /* AnnouncementsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3031CE521E39E3C004F3605 /* AnnouncementsDetail.swift */; };
+		C344C1F421DF7018006A4282 /* OzonDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C1F321DF7018006A4282 /* OzonDataService.swift */; };
+		C344C1F721DF74BC006A4282 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C1F621DF74BC006A4282 /* Category.swift */; };
+		C344C1F921DF7BFE006A4282 /* VijestiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C1F821DF7BFE006A4282 /* VijestiViewController.swift */; };
+		C344C20121DF970D006A4282 /* SaopstenjaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C20021DF970D006A4282 /* SaopstenjaViewController.swift */; };
+		C344C20321DF97F1006A4282 /* Announcements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C20221DF97F1006A4282 /* Announcements.swift */; };
+		C344C20521DF9835006A4282 /* AnnouncementsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C20421DF9835006A4282 /* AnnouncementsCell.swift */; };
+		C352A1FA21E7760F00298072 /* logo_1hd.png in Resources */ = {isa = PBXBuildFile; fileRef = C352A1F921E7760F00298072 /* logo_1hd.png */; };
+		C38BF16A21DE1F28008E9EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BF16921DE1F28008E9EB7 /* AppDelegate.swift */; };
+		C38BF16C21DE1F28008E9EB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BF16B21DE1F28008E9EB7 /* LoginViewController.swift */; };
+		C38BF16F21DE1F28008E9EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38BF16D21DE1F28008E9EB7 /* Main.storyboard */; };
+		C38BF17121DE1F2A008E9EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38BF17021DE1F2A008E9EB7 /* Assets.xcassets */; };
+		C38BF17421DE1F2A008E9EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38BF17221DE1F2A008E9EB7 /* LaunchScreen.storyboard */; };
+		C38BF17C21DE4A38008E9EB7 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BF17B21DE4A38008E9EB7 /* CustomTabBarController.swift */; };
+		C3ED2BC621DF6FD70008640A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED2BC521DF6FD70008640A /* CategoryCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		548611A9334DC5CA0E62BF1E /* Pods-ozon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ozon.release.xcconfig"; path = "Pods/Target Support Files/Pods-ozon/Pods-ozon.release.xcconfig"; sourceTree = "<group>"; };
+		C3031CDD21E37B37004F3605 /* VijestiOpsirnijeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VijestiOpsirnijeViewController.swift; sourceTree = "<group>"; };
+		C3031CE121E381D2004F3605 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		C3031CE321E39310004F3605 /* SopstenjaOpsirnijeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SopstenjaOpsirnijeViewController.swift; sourceTree = "<group>"; };
+		C3031CE521E39E3C004F3605 /* AnnouncementsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsDetail.swift; sourceTree = "<group>"; };
+		C344C1F321DF7018006A4282 /* OzonDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OzonDataService.swift; sourceTree = "<group>"; };
+		C344C1F621DF74BC006A4282 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C344C1F821DF7BFE006A4282 /* VijestiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VijestiViewController.swift; sourceTree = "<group>"; };
+		C344C20021DF970D006A4282 /* SaopstenjaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaopstenjaViewController.swift; sourceTree = "<group>"; };
+		C344C20221DF97F1006A4282 /* Announcements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcements.swift; sourceTree = "<group>"; };
+		C344C20421DF9835006A4282 /* AnnouncementsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsCell.swift; sourceTree = "<group>"; };
+		C352A1F921E7760F00298072 /* logo_1hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_1hd.png; path = "../../../drawable-hdpi/logo_1hd.png"; sourceTree = "<group>"; };
+		C38BF16621DE1F28008E9EB7 /* ozon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ozon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C38BF16921DE1F28008E9EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C38BF16B21DE1F28008E9EB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C38BF16E21DE1F28008E9EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C38BF17021DE1F2A008E9EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C38BF17321DE1F2A008E9EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C38BF17521DE1F2B008E9EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C38BF17B21DE4A38008E9EB7 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		C3ED2BC521DF6FD70008640A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		C6E3EEEE5856617E0C0E1E7B /* Pods-ozon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ozon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ozon/Pods-ozon.debug.xcconfig"; sourceTree = "<group>"; };
+		CDE1AB5B4C607F6F3607A18A /* Pods_ozon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ozon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C38BF16321DE1F28008E9EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F861933D313867D468F4D4 /* Pods_ozon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C45AC9FDD899A76BDFB786 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6E3EEEE5856617E0C0E1E7B /* Pods-ozon.debug.xcconfig */,
+				548611A9334DC5CA0E62BF1E /* Pods-ozon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFB064C1431A22CB9A9B4A45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDE1AB5B4C607F6F3607A18A /* Pods_ozon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C344C1F521DF71E0006A4282 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C344C1F321DF7018006A4282 /* OzonDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C38BF15D21DE1F28008E9EB7 = {
+			isa = PBXGroup;
+			children = (
+				C38BF16821DE1F28008E9EB7 /* ozon */,
+				C38BF16721DE1F28008E9EB7 /* Products */,
+				BFB064C1431A22CB9A9B4A45 /* Frameworks */,
+				05C45AC9FDD899A76BDFB786 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C38BF16721DE1F28008E9EB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C38BF16621DE1F28008E9EB7 /* ozon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C38BF16821DE1F28008E9EB7 /* ozon */ = {
+			isa = PBXGroup;
+			children = (
+				C344C1F521DF71E0006A4282 /* Services */,
+				C3ED2BC421DF6F810008640A /* View */,
+				C3ED2BC321DF6F670008640A /* Model */,
+				C3ED2BC221DF6F5E0008640A /* Controller */,
+				C38BF16921DE1F28008E9EB7 /* AppDelegate.swift */,
+				C38BF16D21DE1F28008E9EB7 /* Main.storyboard */,
+				C38BF17021DE1F2A008E9EB7 /* Assets.xcassets */,
+				C38BF17221DE1F2A008E9EB7 /* LaunchScreen.storyboard */,
+				C38BF17521DE1F2B008E9EB7 /* Info.plist */,
+				C352A1F921E7760F00298072 /* logo_1hd.png */,
+			);
+			path = ozon;
+			sourceTree = "<group>";
+		};
+		C3ED2BC221DF6F5E0008640A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C38BF16B21DE1F28008E9EB7 /* LoginViewController.swift */,
+				C38BF17B21DE4A38008E9EB7 /* CustomTabBarController.swift */,
+				C344C1F821DF7BFE006A4282 /* VijestiViewController.swift */,
+				C344C20021DF970D006A4282 /* SaopstenjaViewController.swift */,
+				C3031CDD21E37B37004F3605 /* VijestiOpsirnijeViewController.swift */,
+				C3031CE321E39310004F3605 /* SopstenjaOpsirnijeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C3ED2BC321DF6F670008640A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C344C1F621DF74BC006A4282 /* Category.swift */,
+				C344C20221DF97F1006A4282 /* Announcements.swift */,
+				C3031CE121E381D2004F3605 /* Detail.swift */,
+				C3031CE521E39E3C004F3605 /* AnnouncementsDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3ED2BC421DF6F810008640A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3ED2BC521DF6FD70008640A /* CategoryCell.swift */,
+				C344C20421DF9835006A4282 /* AnnouncementsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C38BF16521DE1F28008E9EB7 /* ozon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C38BF17821DE1F2B008E9EB7 /* Build configuration list for PBXNativeTarget "ozon" */;
+			buildPhases = (
+				9A331CAF6B6845667C202B94 /* [CP] Check Pods Manifest.lock */,
+				C38BF16221DE1F28008E9EB7 /* Sources */,
+				C38BF16321DE1F28008E9EB7 /* Frameworks */,
+				C38BF16421DE1F28008E9EB7 /* Resources */,
+				F8F6CA15AA6F908979692AB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ozon;
+			productName = ozon;
+			productReference = C38BF16621DE1F28008E9EB7 /* ozon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C38BF15E21DE1F28008E9EB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Amplitudo;
+				TargetAttributes = {
+					C38BF16521DE1F28008E9EB7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = C38BF16121DE1F28008E9EB7 /* Build configuration list for PBXProject "ozon" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C38BF15D21DE1F28008E9EB7;
+			productRefGroup = C38BF16721DE1F28008E9EB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C38BF16521DE1F28008E9EB7 /* ozon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C38BF16421DE1F28008E9EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C352A1FA21E7760F00298072 /* logo_1hd.png in Resources */,
+				C38BF17421DE1F2A008E9EB7 /* LaunchScreen.storyboard in Resources */,
+				C38BF17121DE1F2A008E9EB7 /* Assets.xcassets in Resources */,
+				C38BF16F21DE1F28008E9EB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A331CAF6B6845667C202B94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ozon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8F6CA15AA6F908979692AB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ozon/Pods-ozon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Dropdowns/Dropdowns.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dropdowns.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ozon/Pods-ozon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C38BF16221DE1F28008E9EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C344C20121DF970D006A4282 /* SaopstenjaViewController.swift in Sources */,
+				C38BF16C21DE1F28008E9EB7 /* LoginViewController.swift in Sources */,
+				C38BF16A21DE1F28008E9EB7 /* AppDelegate.swift in Sources */,
+				C344C1F921DF7BFE006A4282 /* VijestiViewController.swift in Sources */,
+				C3031CE421E39310004F3605 /* SopstenjaOpsirnijeViewController.swift in Sources */,
+				C344C1F421DF7018006A4282 /* OzonDataService.swift in Sources */,
+				C38BF17C21DE4A38008E9EB7 /* CustomTabBarController.swift in Sources */,
+				C3ED2BC621DF6FD70008640A /* CategoryCell.swift in Sources */,
+				C3031CDE21E37B37004F3605 /* VijestiOpsirnijeViewController.swift in Sources */,
+				C344C1F721DF74BC006A4282 /* Category.swift in Sources */,
+				C344C20521DF9835006A4282 /* AnnouncementsCell.swift in Sources */,
+				C344C20321DF97F1006A4282 /* Announcements.swift in Sources */,
+				C3031CE621E39E3C004F3605 /* AnnouncementsDetail.swift in Sources */,
+				C3031CE221E381D2004F3605 /* Detail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C38BF16D21DE1F28008E9EB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C38BF16E21DE1F28008E9EB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C38BF17221DE1F2A008E9EB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C38BF17321DE1F2A008E9EB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C38BF17621DE1F2B008E9EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C38BF17721DE1F2B008E9EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C38BF17921DE1F2B008E9EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E3EEEE5856617E0C0E1E7B /* Pods-ozon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA37KW883D;
+				INFOPLIST_FILE = ozon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amplitudo.ozon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C38BF17A21DE1F2B008E9EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548611A9334DC5CA0E62BF1E /* Pods-ozon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA37KW883D;
+				INFOPLIST_FILE = ozon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amplitudo.ozon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C38BF16121DE1F28008E9EB7 /* Build configuration list for PBXProject "ozon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38BF17621DE1F2B008E9EB7 /* Debug */,
+				C38BF17721DE1F2B008E9EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C38BF17821DE1F2B008E9EB7 /* Build configuration list for PBXNativeTarget "ozon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38BF17921DE1F2B008E9EB7 /* Debug */,
+				C38BF17A21DE1F2B008E9EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C38BF15E21DE1F28008E9EB7 /* Project object */;
+}
