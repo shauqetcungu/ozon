@@ -20,21 +20,17 @@ class SopstenjaOpsirnijeViewController: UIViewController {
     var date = ""
     var content = ""
     var image = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         detailTitleAnn.text = name
         detailDateAnn.text = date
         detailContentAnn.text = content
         detailImageAnn.image = image
-        
         detailScrollAnn.contentLayoutGuide.bottomAnchor.constraint(equalTo: detailContentAnn.bottomAnchor).isActive = true
-      
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }

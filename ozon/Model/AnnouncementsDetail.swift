@@ -11,12 +11,12 @@ struct AnnouncementDetail{
     private(set) public var title: String
     private(set) public var date: String
     private(set) public var content: String
-    private(set) public var imageName: String
+    private(set) public var imageName: String?
     
     init(title: String,date: String,content: String,imageName: String){
         self.title = title
         self.date = date
         self.content = content
-        self.imageName = imageName
+        self.imageName = imageName 
     }
 }

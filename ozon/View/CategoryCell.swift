@@ -15,7 +15,7 @@ class CategoryCell: UITableViewCell {
     @IBOutlet weak var categoryContent: UILabel!
     @IBOutlet weak var categoryDate: UILabel!
     
-    func updateViews(news: Article){
+    func updateViews(news: Category){
         let myURLString: String = news.image!
         let myURL = URL(string: myURLString)
         categoryImage.kf.setImage(with:myURL)

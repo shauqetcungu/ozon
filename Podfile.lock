@@ -1,20 +1,28 @@
 PODS:
+  - Alamofire (4.5.0)
   - Dropdowns (2.0.0)
   - Kingfisher (4.9.0)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - Alamofire (= 4.5.0)
   - Dropdowns
   - Kingfisher (~> 4.0)
+  - SwiftyJSON (= 3.1.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Dropdowns
     - Kingfisher
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Dropdowns: 9dd32d9ac9cc59e56ae093b588d35477abde32d2
   Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: f585605a4fadcce4b60c3410bc945666fb53a3b3
+PODFILE CHECKSUM: a8705dd117f0005431711766467c7a4676363730
 
 COCOAPODS: 1.5.3

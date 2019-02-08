@@ -21,8 +21,6 @@ class VijestiOpsirnijeViewController: UIViewController{
     var content = ""
     var image = UIImage()
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         detailTitleNews.text = name
@@ -31,6 +29,7 @@ class VijestiOpsirnijeViewController: UIViewController{
         detailImageNews.image = image
         detailScrollNews.contentLayoutGuide.bottomAnchor.constraint(equalTo: detailContentNews.bottomAnchor).isActive = true
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

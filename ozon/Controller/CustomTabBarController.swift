@@ -9,18 +9,8 @@
 import UIKit
 import Dropdowns
 import Kingfisher
-extension UIImage {
-    func createSelectionIndicator(color: UIColor, size: CGSize, lineWidth: CGFloat) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(size, false, 0)
-        color.setFill()
-        UIRectFill(CGRect(x:0, y:size.height - lineWidth, width:size.width, height:lineWidth))
-        
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image!
-    }
-}
 class CustomTabBarController: UITabBarController{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -75,10 +65,21 @@ class CustomTabBarController: UITabBarController{
         
        addNavBarImage()
        addNavBarImageright()
+        
        let items = OzonDataService.instance.getCities()
        let titleView = TitleView(navigationController: navigationController!, title: "Grad", items: items)
         
        navigationItem.titleView = titleView
+        
+        let secondFrame = CGRect(x: tabFrame.width/1.1, y: 0, width: tabFrame.width/2, height: navigationBarHeight/2)
+        let secondLabel = UILabel(frame: secondFrame)
+        secondLabel.textColor = UIColor.white
+        secondLabel.font = UIFont.boldSystemFont(ofSize: 10.0)
+        
+        titleView?.action = { [weak self] index in
+            secondLabel.text = "\(OzonDataService.instance.getTemperatures()[index])°C"
+        }
+        navigationController?.navigationBar.addSubview(secondLabel)
     }
 }
 

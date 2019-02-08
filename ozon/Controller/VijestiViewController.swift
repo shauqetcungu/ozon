@@ -17,6 +17,11 @@ class VijestiViewController: UIViewController, UITableViewDataSource, UITableVie
         self.categoryTable.rowHeight = 380;
         categoryTable.dataSource = self
         categoryTable.delegate = self
+        NewsService.instance.findAllNews { (success) in
+            DispatchQueue.main.async {
+                self.categoryTable.reloadData()
+            }
+        }
         
         let systemFontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18.0)]
         UITabBarItem.appearance().setTitleTextAttributes(systemFontAttributes, for: .normal)
@@ -42,39 +47,36 @@ class VijestiViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return OzonDataService.instance.getNews().count
-    }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryCell{
-            let category = OzonDataService.instance.getNews()[indexPath.row]
-            cell.updateViews(news: category)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as? CategoryCell{
+            let news = NewsService.instance.news[indexPath.row]
+            cell.updateViews(news: news)
             return cell
         }
         else{
-            return CategoryCell()
+            return UITableViewCell()
         }
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc  = storyboard?.instantiateViewController(withIdentifier: "VijestiOpsirnijeViewController") as? VijestiOpsirnijeViewController
-        vc?.name = OzonDataService.instance.getNews()[indexPath.row].title
-        vc?.date = OzonDataService.instance.getNews()[indexPath.row].date
-        vc?.content = OzonDataService.instance.getNews()[indexPath.row].content
-        
-        let myURL = URL(string: OzonDataService.instance.getNews()[indexPath.row].image!)
-        KingfisherManager.shared.retrieveImage(with: myURL!, options: nil, progressBlock: nil, completionHandler: { image, error, cacheType, imageURL in
-            vc?.image = image!
-        })
-        /*
-        vc?.image  = UIImage(named: OzonDataService.instance.getNews()[indexPath.row].image!)!
     
-        let myURLString: String = "\(OzonDataService.instance.getNews()[indexPath.row].image!)"
-        if let myURL = URL(string: myURLString), let myData = try? Data(contentsOf: myURL), let image = UIImage(data: myData) {
-            vc?.image  = image
-        }
-         */
-        
-        self.navigationController?.pushViewController(vc!, animated: false)
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return NewsService.instance.news.count
+    }
+
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let vc  = storyboard?.instantiateViewController(withIdentifier: "VijestiOpsirnijeViewController") as? VijestiOpsirnijeViewController
+    vc?.name = NewsService.instance.news[indexPath.row].title.html2String
+    vc?.date = NewsService.instance.news[indexPath.row].date
+    vc?.content = NewsService.instance.news[indexPath.row].content.html2String
+    
+    let myURL = URL(string: NewsService.instance.news[indexPath.row].image!)
+    KingfisherManager.shared.retrieveImage(with: myURL!, options: nil, progressBlock: nil, completionHandler: { image, error, cacheType, imageURL in
+        vc?.image = image!
+    })
+    
+    self.navigationController?.pushViewController(vc!, animated: false)
     }
 }
