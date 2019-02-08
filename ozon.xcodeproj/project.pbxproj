@@ -14,19 +14,18 @@
 		C3031CE621E39E3C004F3605 /* AnnouncementsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3031CE521E39E3C004F3605 /* AnnouncementsDetail.swift */; };
 		C31117DF220D892700F2CC1B /* AnnouncementsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31117DE220D892700F2CC1B /* AnnouncementsService.swift */; };
 		C31117E2220D9CB200F2CC1B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31117E1220D9CB200F2CC1B /* Extensions.swift */; };
-		C31117E4220D9EB500F2CC1B /* OzonDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31117E3220D9EB500F2CC1B /* OzonDataService.swift */; };
 		C344C1F721DF74BC006A4282 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C1F621DF74BC006A4282 /* Category.swift */; };
 		C344C1F921DF7BFE006A4282 /* VijestiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C1F821DF7BFE006A4282 /* VijestiViewController.swift */; };
 		C344C20121DF970D006A4282 /* SaopstenjaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C20021DF970D006A4282 /* SaopstenjaViewController.swift */; };
 		C344C20321DF97F1006A4282 /* Announcements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C20221DF97F1006A4282 /* Announcements.swift */; };
 		C344C20521DF9835006A4282 /* AnnouncementsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344C20421DF9835006A4282 /* AnnouncementsCell.swift */; };
-		C352A1FA21E7760F00298072 /* logo_1hd.png in Resources */ = {isa = PBXBuildFile; fileRef = C352A1F921E7760F00298072 /* logo_1hd.png */; };
 		C38BF16A21DE1F28008E9EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BF16921DE1F28008E9EB7 /* AppDelegate.swift */; };
 		C38BF16C21DE1F28008E9EB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BF16B21DE1F28008E9EB7 /* LoginViewController.swift */; };
 		C38BF16F21DE1F28008E9EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38BF16D21DE1F28008E9EB7 /* Main.storyboard */; };
 		C38BF17121DE1F2A008E9EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38BF17021DE1F2A008E9EB7 /* Assets.xcassets */; };
 		C38BF17421DE1F2A008E9EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38BF17221DE1F2A008E9EB7 /* LaunchScreen.storyboard */; };
 		C38BF17C21DE4A38008E9EB7 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BF17B21DE4A38008E9EB7 /* CustomTabBarController.swift */; };
+		C3DE1557220DB07C002D14E5 /* OzonDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE1556220DB07C002D14E5 /* OzonDataService.swift */; };
 		C3E901D4220C49B100605BF0 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E901D3220C49B100605BF0 /* NewsService.swift */; };
 		C3ED2BC621DF6FD70008640A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED2BC521DF6FD70008640A /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
@@ -39,13 +38,11 @@
 		C3031CE521E39E3C004F3605 /* AnnouncementsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsDetail.swift; sourceTree = "<group>"; };
 		C31117DE220D892700F2CC1B /* AnnouncementsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsService.swift; sourceTree = "<group>"; };
 		C31117E1220D9CB200F2CC1B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		C31117E3220D9EB500F2CC1B /* OzonDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OzonDataService.swift; path = ../../../../../Downloads/OzonDataService.swift; sourceTree = "<group>"; };
 		C344C1F621DF74BC006A4282 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		C344C1F821DF7BFE006A4282 /* VijestiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VijestiViewController.swift; sourceTree = "<group>"; };
 		C344C20021DF970D006A4282 /* SaopstenjaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaopstenjaViewController.swift; sourceTree = "<group>"; };
 		C344C20221DF97F1006A4282 /* Announcements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcements.swift; sourceTree = "<group>"; };
 		C344C20421DF9835006A4282 /* AnnouncementsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsCell.swift; sourceTree = "<group>"; };
-		C352A1F921E7760F00298072 /* logo_1hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_1hd.png; path = "../../../drawable-hdpi/logo_1hd.png"; sourceTree = "<group>"; };
 		C38BF16621DE1F28008E9EB7 /* ozon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ozon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38BF16921DE1F28008E9EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38BF16B21DE1F28008E9EB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +51,7 @@
 		C38BF17321DE1F2A008E9EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C38BF17521DE1F2B008E9EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C38BF17B21DE4A38008E9EB7 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		C3DE1556220DB07C002D14E5 /* OzonDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzonDataService.swift; sourceTree = "<group>"; };
 		C3E901D3220C49B100605BF0 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		C3ED2BC521DF6FD70008640A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		C6E3EEEE5856617E0C0E1E7B /* Pods-ozon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ozon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ozon/Pods-ozon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,9 +98,9 @@
 		C344C1F521DF71E0006A4282 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				C31117E3220D9EB500F2CC1B /* OzonDataService.swift */,
 				C3E901D3220C49B100605BF0 /* NewsService.swift */,
 				C31117DE220D892700F2CC1B /* AnnouncementsService.swift */,
+				C3DE1556220DB07C002D14E5 /* OzonDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -138,7 +136,6 @@
 				C38BF17021DE1F2A008E9EB7 /* Assets.xcassets */,
 				C38BF17221DE1F2A008E9EB7 /* LaunchScreen.storyboard */,
 				C38BF17521DE1F2B008E9EB7 /* Info.plist */,
-				C352A1F921E7760F00298072 /* logo_1hd.png */,
 			);
 			path = ozon;
 			sourceTree = "<group>";
@@ -237,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C352A1FA21E7760F00298072 /* logo_1hd.png in Resources */,
 				C38BF17421DE1F2A008E9EB7 /* LaunchScreen.storyboard in Resources */,
 				C38BF17121DE1F2A008E9EB7 /* Assets.xcassets in Resources */,
 				C38BF16F21DE1F28008E9EB7 /* Main.storyboard in Resources */,
@@ -304,7 +300,7 @@
 				C344C1F921DF7BFE006A4282 /* VijestiViewController.swift in Sources */,
 				C3031CE421E39310004F3605 /* SopstenjaOpsirnijeViewController.swift in Sources */,
 				C38BF17C21DE4A38008E9EB7 /* CustomTabBarController.swift in Sources */,
-				C31117E4220D9EB500F2CC1B /* OzonDataService.swift in Sources */,
+				C3DE1557220DB07C002D14E5 /* OzonDataService.swift in Sources */,
 				C3ED2BC621DF6FD70008640A /* CategoryCell.swift in Sources */,
 				C3031CDE21E37B37004F3605 /* VijestiOpsirnijeViewController.swift in Sources */,
 				C344C1F721DF74BC006A4282 /* Category.swift in Sources */,

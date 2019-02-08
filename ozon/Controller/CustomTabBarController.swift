@@ -71,10 +71,10 @@ class CustomTabBarController: UITabBarController{
         
        navigationItem.titleView = titleView
         
-        let secondFrame = CGRect(x: tabFrame.width/1.1, y: 0, width: tabFrame.width/2, height: navigationBarHeight/2)
+        let secondFrame = CGRect(x: tabFrame.width/1.1, y: 0, width: tabFrame.width/2, height: navigationBarHeight/1.8)
         let secondLabel = UILabel(frame: secondFrame)
         secondLabel.textColor = UIColor.white
-        secondLabel.font = UIFont.boldSystemFont(ofSize: 10.0)
+        secondLabel.font = UIFont.boldSystemFont(ofSize: 11)
         
         titleView?.action = { [weak self] index in
             secondLabel.text = "\(OzonDataService.instance.getTemperatures()[index])°C"
